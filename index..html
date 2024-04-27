@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -109,7 +110,7 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <label class="switch" for="toggle">
+        <label for="toggle" class="switch">Toggle Dark Mode:
             <input type="checkbox" id="toggle">
             <span class="slider round"></span>
         </label>
@@ -117,7 +118,7 @@
 
     <section class="hero">
         <h1>Welcome to Our Movie Review Site</h1>
-        <label for="search">Search: </label>
+        <label for="search">Search Movies:</label>
         <input type="text" id="search" placeholder="Search...">
     </section>
 
@@ -131,7 +132,7 @@
         <ul class="filter">
             <!-- Filters -->
         </ul>
-        <label for="upcoming-search">Search by Title/Genre/etc.: </label>
+        <label for="upcoming-search">Search Upcoming Movies:</label>
         <input type="text" id="upcoming-search" placeholder="Search by Title/Genre/etc.">
         <div class="movies-grid">
             <!-- Upcoming Movies Grid/List -->
@@ -160,4 +161,9 @@
         function switchTheme(e) {
             if (e.target.checked) {
                 document.documentElement.setAttribute('data-theme', 'dark');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'light');
             }
+        }
+
+        // Fetch
